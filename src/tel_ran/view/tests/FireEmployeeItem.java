@@ -1,14 +1,12 @@
 package tel_ran.view.tests;
 
 import tel_ran.employees.model.interfaces.IEmployeesModel;
-import tel_ran.view.random.RandomItem;
 
-public class FireEmployeeItem extends RandomItem {
-	IEmployeesModel employees;
+
+public class FireEmployeeItem extends EmployeeRandomItem {
 
 	public FireEmployeeItem(int probability, IEmployeesModel employees) {
-		super(probability);
-		this.employees = employees;
+		super(probability, employees);
 	}
 
 	@Override

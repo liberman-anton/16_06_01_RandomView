@@ -8,7 +8,6 @@ public class HireEmployeeManagerItem extends HireEmployeeItem {
 	
 	public HireEmployeeManagerItem(int probability, IEmployeesModel employees) {
 		super(probability, employees);
-
 	}
 
 	@Override

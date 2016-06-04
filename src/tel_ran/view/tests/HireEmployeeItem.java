@@ -1,10 +1,8 @@
 package tel_ran.view.tests;
 
 import tel_ran.employees.model.interfaces.IEmployeesModel;
-import tel_ran.view.random.RandomItem;
 
-public abstract class HireEmployeeItem extends RandomItem {
-	protected static IEmployeesModel employees;
+public abstract class HireEmployeeItem extends EmployeeRandomItem {
 	protected int id;
 	protected int basicSalary;
 	protected String position;
@@ -12,9 +10,7 @@ public abstract class HireEmployeeItem extends RandomItem {
 	
 
 	public HireEmployeeItem(int probability, IEmployeesModel employees) {
-		super(probability);
-		HireEmployeeItem.employees = employees;
-		
+		super(probability, employees);
 	}
 
 	@Override
